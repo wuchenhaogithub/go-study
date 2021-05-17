@@ -58,6 +58,7 @@ func useSliceFunc() {
 	number = append(number, 1, 2, 3, 4, 5) //追加元素,可以同时追加多个
 	printSlice(number)
 
+	//len 获取切片长度，cap获取切片容器长度
 	number1 := make([]int, len(number)*2, cap(number)*2) /* 创建切片 numbers1 是之前切片的两倍容量*/
 	printSlice(number1)
 	copy(number1, number) //cope 复制number 中的值到number1
